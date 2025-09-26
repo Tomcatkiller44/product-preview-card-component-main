@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  color: hsl(228, 12%, 48%);
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .design {
@@ -29,12 +30,60 @@ img {
 .card {
   width: 350px;
   background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .card-body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 h2 {
   font-family: "Fraunces", sans-serif;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.product-name {
+  font-family: "fraunces", serif;
+  color: black;
+  font-size: 2.5em;
+}
+
+.price-old {
+  text-decoration: line-through;
+}
+
+.price-new {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.card-btn {
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  color: white;
+  border-radius: 7px;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.product-description {
+  line-height: 1.5;
 }
